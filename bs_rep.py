@@ -15,7 +15,7 @@ bout_lengths_mut = fish_data[fish_data.genotype == 'mut'].bout_length
 if __name__ == '__main__':
     #Create function with relevant arguments including, data, function and sample size
     def draw_bs_reps(data, func, size=1):
-        """Generate bootstrap replicate of data."""
+        #Generate bootstrap replicate of data.
         bs_sample = np.random.choice(data, len(data))
         return func(bs_sample)
         
